@@ -283,7 +283,7 @@ header {
   }
 }
 
-/* My skille section */
+/* My skills section */
 .my-skills {
   background-color: var(--clr-dark);
   background-image: url(../img/adrien-olichon-RCAhiGJsUUE-unsplash.jpg);
@@ -326,7 +326,6 @@ header {
 .skills__content {
   width: 330px;
   margin: 1rem auto;
-  /* new */
   background-color: var(--clr-dark);
   padding: 1.5rem;
   border-radius: 1.25rem;
@@ -335,7 +334,7 @@ header {
 .skills__box {
   display: flex;
   justify-content: center;
-  column-gap: 2.5rem;
+  gap: 2.5rem;
 }
 
 .skills__group {
@@ -345,7 +344,7 @@ header {
 
 .skills__data {
   display: flex;
-  column-gap: .5rem;
+  gap: .5rem;
 }
 
 .skills .bxs-badge-check {
@@ -419,11 +418,17 @@ header {
   background-color: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
+  padding: 2rem;
+  background-color: var(--clr-dark);
+  background-image: url(../img/adrien-olichon-RCAhiGJsUUE-unsplash.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
 }
 
 .portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
 }
 
 .portfolio__item {
