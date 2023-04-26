@@ -283,22 +283,23 @@ header {
   }
 }
 
-/* My experience section */
-.my-experiences {
+/* My skille section */
+.my-skills {
   background-color: var(--clr-dark);
   background-image: url(../img/adrien-olichon-RCAhiGJsUUE-unsplash.jpg);
   background-size: cover;
   background-blend-mode: multiply;
   color: var(--clr-light);
   text-align: center;
+  padding: 1em 2em;
 }
 
-.section__title--experiences {
+.section__title--skills {
   color: var(--clr-accent);
   position: relative;
 }
 
-.section__title--experiences::after {
+.section__title--skills::after {
   content: "";
   display: block;
   width: 2em;
@@ -308,24 +309,65 @@ header {
   opacity: 0.5;
 }
 
-.experiences {
-  margin-bottom: 4em;
+.skills {
+  margin-bottom: 2em;
+  /* new */
+  row-gap: 2rem;
+  padding-top: 1rem;
 }
 
-.experience {
+.skills__title {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-reg);
+  color: var(--clr-accent);
+  margin-bottom: 1.5rem;
+}
+
+.skills_content {
   max-width: 500px;
   margin: 0 auto;
+  /* new */
+  background-color: var(--clr-dark);
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+}
+
+.skills__box {
+  display: flex;
+  justify-content: center;
+  column-gap: 2.5rem;
+}
+
+.skills__group {
+  display: grid;
+  align-content: flex-start;
+}
+
+.skills__data {
+  display: flex;
+  column-gap: .5rem;
+}
+
+.skills .bxs-badge-check {
+  font-size: 1rem;
+  color: var(--clr-accent);
+}
+
+.skills__name {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-bold);
+  line-height: 18px;
 }
 
 @media (min-width: 800px) {
-  .experiences {
+  .skills {
     display: flex;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .experience + .experience {
+  .skill + .skill {
     margin-left: 2em;
   }
 }
